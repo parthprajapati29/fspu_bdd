@@ -7,6 +7,7 @@ from pages.lander import landerPage
 
 @given("Browser is opened and user opens the test link")
 def open_test_link_in_browser(context):
+    """Step file to open browser"""
     context.driver = logging.FileHandler.selenium_driver = landerPage.open_browser_web(context)
     context.lander = landerPage(context.driver)
     context.lander.open_lander_page()
