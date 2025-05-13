@@ -1,0 +1,14 @@
+selenium~=4.18.1
+appium-python-client~=3.2.1
+allure-behave~=2.13.3
+webdriver-manager~=4.0.1
+boto3~=1.26.77
+botocore~=1.29.77
+requests~=2.32.0
+behave~=1.2.6
+PyYAML~=6.0
+psutil~=5.9.4
+PyAutoGUI~=0.9.53
+pages~=0.3
+pyautoit~=0.6.5
+autoit~=0.2.6

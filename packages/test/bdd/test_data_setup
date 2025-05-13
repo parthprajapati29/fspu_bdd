@@ -1,0 +1,91 @@
+***************************************************************************************************
+Feature file: hr_portal_rbac_access_role
+
+Description: To run this feature file we will need 2 users
+1. With first user, we will login and check validation of access roles
+2. With second user, we will login and just update the user roles only from user management (scenario 2, 4, 6)
+
+Pre-requisite:
+- Need to request all the 30 creds from SSP portal
+- for user1, will have to set user role to senior portal administrator
+
+
+
+***************************************************************************************************
+Feature File: \dsp_22_hr_portal_elements_sanity_checks.feature
+
+Pre-requiste:
+1. Make sure that in yamal file below data is field and current value and change value should be unique
+    NotificationSettings:
+      Hr_team_notification: "hrteam1@devmail.sitekit.co.uk"
+      Oh_team_notification: "ohteam1@devmail.sitekit.co.uk"
+      Education_team_notification: "educationteam1@devmail.sitekit.co.uk"
+2. By default the setting should be "Yes, send email notifications" for all the email idin both organisation details & Notification setting
+
+
+***************************************************************************************************
+Feature File: dsp_16_hr_portal_bulkupload.feature
+
+Pre-requiste:
+1. Need a user in the system that is duplicate
+2. Pii data needs to be valid inorder to receive otp and email
+
+***************************************************************************************************
+Feature file: dsp_15_hr_portal_withdraw_credentials.feature
+
+Pre-requiste:
+- User should have ESR linked, if ESR is not linked then test case will fail as it will ask to enter the ESR
+
+***************************************************************************************************
+Feature File: dsp_26_hr_portal_review_rejected_credentials.feature
+
+Pre-requisite:
+1. User should be present in SSP portal
+2. User should have ESR linked, if ESR is not linked then test case will fail as it will ask to enter the ESR
+
+Note:
+- Scenario 1: SSP user requesting 2 credentials with is moving and handling level 1 & 2
+- Scenario 3: Hr portal will approve the requested credentials
+- Scenario 5: SSP rejecting both credentials
+- Scenario 7 : Hr portal, user resolves all the rejects creds
+
+
+***************************************************************************************************
+Feature File: dsp_27_hr_portal_reject_credentials.feature
+
+Pre-requisite:
+1. User should be present in SSP portal
+2. User should have ESR linked, if ESR is not linked then test case will fail as it will ask to enter the ESR
+
+Note:
+- Scenario 1: SSP user requesting 1 credentials
+- Scenario 2: Hr portal will reject the requested credentials and verify the log presence in passport history tab
+- Scenario 3: SSP portal verify the log presence in passport history tab
+
+
+***************************************************************************************************
+Feature File: dsp_09_ssp_portal_share_cred_with_diff_org.feature
+
+Pre-requiste:
+- There should be no user present in sheffield trust
+
+***************************************************************************************************
+Feature File: dsp_14_hr_portal_revoke_credentials.feature
+
+Pre-requiste:
+- Create a new user and then execute.
+***************************************************************************************************
+Feature File: dsp_28_ssp_portal_share_cred_journey_negative.feature
+
+Pre-requiste for email validation:
+- In Coventry trust need the user access and identity
+- Need same user in sheffield to validate the email address already in use
+
+Pre-requiste for mobile validation:
+- In Coventry trust need the user access and identity
+- Need same mobile number in coventry & On sheffield (create a new entry with different email address and used mobile number)
+
+
+
+
+

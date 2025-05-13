@@ -1,0 +1,77 @@
+git
+***************************************************************************************************
+
+behave -f allure_behave.formatter:AllureFormatter -o allure-results '.\features\c&c_0_create_user.feature'
+behave --tags=@Regression
+behave -f allure_behave.formatter:AllureFormatter -o allure-results --tags=@Sanity
+
+
+***************************************************************************************************
+Git commands
+
+Tell Git who you are:
+
+git config --global user.name "Sam Smith"
+git config --global user.email sam@example.com
+
+
+Create a new local repository (First Time):
+
+git init
+
+Add files (Staging or Stash):
+
+git add <filename>
+git add *
+
+Commit:
+
+git commit -m "message"
+
+Push for First time :
+
+git remote add origin <server>
+
+Push:
+
+git push origin master/Branch as per requirement
+
+*****************************************************************************************
+
+First Time Need to get the code from GIT to local machine:
+
+git clone /path/to/repository
+
+Going forward , just pull latest code:
+
+git pull
+
+Website for more info : https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+
+
+***************************************************************************************************
+
+Allure report to share with the stakeholder
+Run the allure serve command
+Report will be generated via server link
+There will be temp folder link it , which contains the allure reports details
+Just drag and drop the allure-report folder to netlify website
+It will upload the allure reports and generate a link for allure reports
+Which can be shared with the team members
+
+*************************************************************************************************
+
+In order to attach the screenshots in allure reports , use below command in the failure section within the code
+
+allure.attach(self.driver.getscreeenshots_as_png, name = "Fail", attachment type = AttachmentType.png)
+
+*************************************************************************************************
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JsonSchemaMappingsProjectConfiguration">
+    <state>
+      <map>
+        <entry key="JSON Schema 2020-12">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="JSON Schema 2020-12" />
+              <option name="relativePathToSchema" value="https://json-schema.org/draft/2020-12/schema" />
+              <option name="schemaVersion" value="JSON Schema 202,012" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="allure-results/1ccf0496-856a-4d90-ae91-0592075799f7-result.json" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="Prettier">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="Prettier" />
+              <option name="relativePathToSchema" value="http://json.schemastore.org/prettierrc" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="allure-results/1eff5386-bddb-4b6c-a2a7-50b5037b1550-result.json" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+      </map>
+    </state>
+  </component>
+</project>
