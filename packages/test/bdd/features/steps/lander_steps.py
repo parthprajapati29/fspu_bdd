@@ -15,6 +15,6 @@ def open_test_link_in_browser(context):
 
 @when("User enters the email and click on the continue button")
 def enter_email_and_continue(context):
-    """Step file to enter user email and click continue"""
+    """Step file to enter user email and click continu"""
     context.lander = landerPage(context.driver)
     context.lander.enter_email_click_continue(BasePage.get_test_data("PiiData", "Email", "test_data.yaml"))
